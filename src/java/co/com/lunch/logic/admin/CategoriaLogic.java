@@ -6,7 +6,7 @@
 package co.com.lunch.logic.admin;
 
 import co.com.lunch.conexion.HibernateUtil;
-import co.com.lunch.persistencia.admin.CajaPredeterminadaEntity;
+import co.com.lunch.persistencia.admin.CategoriaEntity;
 import co.com.lunch.persistencia.admin.ProductoEntity;
 import java.util.ArrayList;
 import org.hibernate.Criteria;
@@ -19,7 +19,7 @@ import org.hibernate.Transaction;
  *
  * @author oscarramirez
  */
-public class CajaPredeterminadaLogic {
+public class CategoriaLogic {
     private Session sesion;
     private Transaction tx;
     /**
@@ -42,12 +42,12 @@ public class CajaPredeterminadaLogic {
         return retorno;
     }
     /**
-     * Método que permite ingresar un regitro de Caja Predeterminada nuevo
+     * Método que permite ingresar un regitro de una Categoria nuevo
      * @param info
      * @return 
      */
-    public CajaPredeterminadaEntity ingresaCajaPredeterminada(CajaPredeterminadaEntity info){
-        CajaPredeterminadaEntity infoRetorno=null;
+    public CategoriaEntity ingresaCategoria(CategoriaEntity info){
+        CategoriaEntity infoRetorno=null;
         try{
             if(initOperation()){
                 info.setId(maxId());
@@ -63,12 +63,12 @@ public class CajaPredeterminadaLogic {
         return infoRetorno;
     }
     /**
-     * Métood que permite actualizar un registro de Caja Predeterminada existente
+     * Métood que permite actualizar un registro de una Categoria existente
      * @param info
      * @return 
      */
-    public CajaPredeterminadaEntity actualizaCajaPredeterminada(CajaPredeterminadaEntity info){
-        CajaPredeterminadaEntity infoRetorno=null;
+    public CategoriaEntity actualizaCategoria(CategoriaEntity info){
+        CategoriaEntity infoRetorno=null;
         try{
             if(initOperation()){
                 sesion.update(info);
@@ -83,15 +83,15 @@ public class CajaPredeterminadaLogic {
         return infoRetorno;
     }
     /**
-     * Método que trae toda la lista de registros de la Caja Predeterminada
+     * Método que trae toda la lista de registros de la una Categoria
      * @return 
      */
-    public ArrayList<CajaPredeterminadaEntity> listaCajaPredeterminada(){
-        ArrayList<CajaPredeterminadaEntity>lista=new ArrayList<>();
+    public ArrayList<CategoriaEntity> listaCategoria(){
+        ArrayList<CategoriaEntity>lista=new ArrayList<>();
         try{
             if(initOperation()){
-                Criteria criteria=sesion.createCriteria(CajaPredeterminadaEntity.class);
-                lista=(ArrayList<CajaPredeterminadaEntity>)criteria.list();
+                Criteria criteria=sesion.createCriteria(CategoriaEntity.class);
+                lista=(ArrayList<CategoriaEntity>)criteria.list();
             }else{
                 System.out.println("ERROR de validación al conectar");
             }
@@ -110,7 +110,7 @@ public class CajaPredeterminadaLogic {
         Integer retorna=-1;
         try{
             if(initOperation()){
-                Query query=sesion.createQuery("SELECT MAX(id) FROM CajaPredeterminadaEntity");
+                Query query=sesion.createQuery("SELECT MAX(id) FROM CategoriaEntity");
                 retorna =(Integer)query.uniqueResult();
                 retorna++;
             }else{
