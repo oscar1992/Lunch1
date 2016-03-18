@@ -6,7 +6,7 @@
 package co.com.lunch.logic.admin;
 
 import co.com.lunch.conexion.HibernateUtil;
-import co.com.lunch.persistencia.admin.NOMBREENTIDADEntity;
+import co.com.lunch.persistencia.cliente.FeedbackEntity;
 import co.com.lunch.persistencia.admin.ProductoEntity;
 import java.util.ArrayList;
 import org.hibernate.Criteria;
@@ -19,7 +19,7 @@ import org.hibernate.Transaction;
  *
  * @author oscarramirez
  */
-public class NOMBRECLASELogic {
+public class FeedbackLogic {
     private Session sesion;
     private Transaction tx;
     /**
@@ -42,12 +42,12 @@ public class NOMBRECLASELogic {
         return retorno;
     }
     /**
-     * Método que permite ingresar un regitro de NOMBRECOMENTARIO nuevo
+     * Método que permite ingresar un regitro de Feedback nuevo
      * @param info
      * @return 
      */
-    public NOMBREENTIDADEntity ingresaNOMBREMETODO(NOMBREENTIDADEntity info){
-        NOMBREENTIDADEntity infoRetorno=null;
+    public FeedbackEntity ingresaFeedback(FeedbackEntity info){
+        FeedbackEntity infoRetorno=null;
         try{
             if(initOperation()){
                 info.setId(maxId());
@@ -63,12 +63,12 @@ public class NOMBRECLASELogic {
         return infoRetorno;
     }
     /**
-     * Métood que permite actualizar un registro de NOMBRECOMENTARIO existente
+     * Métood que permite actualizar un registro de Feedback existente
      * @param info
      * @return 
      */
-    public NOMBREENTIDADEntity actualizaNOMBREMETODO(NOMBREENTIDADEntity info){
-        NOMBREENTIDADEntity infoRetorno=null;
+    public FeedbackEntity actualizaFeedback(FeedbackEntity info){
+        FeedbackEntity infoRetorno=null;
         try{
             if(initOperation()){
                 sesion.update(info);
@@ -83,15 +83,15 @@ public class NOMBRECLASELogic {
         return infoRetorno;
     }
     /**
-     * Método que trae toda la lista de registros de la NOMBRECOMENTARIO
+     * Método que trae toda la lista de registros de la Feedback
      * @return 
      */
-    public ArrayList<NOMBREENTIDADEntity> listaNOMBREMETODO(){
-        ArrayList<NOMBREENTIDADEntity>lista=new ArrayList<>();
+    public ArrayList<FeedbackEntity> listaFeedback(){
+        ArrayList<FeedbackEntity>lista=new ArrayList<>();
         try{
             if(initOperation()){
-                Criteria criteria=sesion.createCriteria(NOMBREENTIDADEntity.class);
-                lista=(ArrayList<NOMBREENTIDADEntity>)criteria.list();
+                Criteria criteria=sesion.createCriteria(FeedbackEntity.class);
+                lista=(ArrayList<FeedbackEntity>)criteria.list();
             }else{
                 System.out.println("ERROR de validación al conectar");
             }
@@ -110,7 +110,7 @@ public class NOMBRECLASELogic {
         Integer retorna=-1;
         try{
             if(initOperation()){
-                Query query=sesion.createQuery("SELECT MAX(id) FROM NOMBREENTIDADEntity");
+                Query query=sesion.createQuery("SELECT MAX(id) FROM FeedbackEntity");
                 retorna =(Integer)query.uniqueResult();
                 retorna++;
             }else{
