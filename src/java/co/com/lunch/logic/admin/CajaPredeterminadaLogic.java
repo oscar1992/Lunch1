@@ -7,7 +7,6 @@ package co.com.lunch.logic.admin;
 
 import co.com.lunch.conexion.HibernateUtil;
 import co.com.lunch.persistencia.admin.CajaPredeterminadaEntity;
-import co.com.lunch.persistencia.admin.ProductoEntity;
 import java.util.ArrayList;
 import org.hibernate.Criteria;
 import org.hibernate.Query;

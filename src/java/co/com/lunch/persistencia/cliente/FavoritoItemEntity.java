@@ -29,7 +29,7 @@ public class FavoritoItemEntity implements Serializable{
     private ProductoEntity producto;
     @JoinColumn(name = "FAVO_NLON")
     @ManyToOne
-    private NumeroLonchera nlonchera;
+    private NumeroLoncheraEntity nlonchera;
 
     public Integer getId() {
         return id;
@@ -47,11 +47,11 @@ public class FavoritoItemEntity implements Serializable{
         this.producto = producto;
     }
 
-    public NumeroLonchera getNlonchera() {
+    public NumeroLoncheraEntity getNlonchera() {
         return nlonchera;
     }
 
-    public void setNlonchera(NumeroLonchera nlonchera) {
+    public void setNlonchera(NumeroLoncheraEntity nlonchera) {
         this.nlonchera = nlonchera;
     }
 }

@@ -41,6 +41,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
+    @WebMethod
     public InformacionNutricionalEntity actualizaInformacionNutricionalEntity(@WebParam(name = "info")InformacionNutricionalEntity info){
         InformacionNutricionalEntity infoRetorna=null;
         try{
@@ -55,6 +56,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
+    @WebMethod
     public ArrayList<InformacionNutricionalEntity> listaInformacionNutricionalEntity(){
         ArrayList<InformacionNutricionalEntity> infoRetorna=null;
         try{

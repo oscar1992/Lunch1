@@ -22,7 +22,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "CLI_TFEED")
-public class Feddback implements Serializable{
+public class FeedbackEntity implements Serializable{
     @Id
     @Column(name = "FEED_FEED")
     private Integer id;

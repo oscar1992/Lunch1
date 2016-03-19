@@ -19,7 +19,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "CLI_TNLON")
-public class NumeroLonchera implements Serializable{
+public class NumeroLoncheraEntity implements Serializable{
     @Id
     @Column(name = "NLON_NLON")
     private Integer id;
