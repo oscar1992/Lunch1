@@ -22,12 +22,12 @@ import javax.persistence.Table;
 @Table(name = "ADM_TGRPR")
 public class GrupoAlimenticioProductoEntity implements Serializable{
     @Id
-    @Column(name = "GRPR_GRPR")
+    @Column(name = "GRPR_PRGR")
     private Integer id;
-    @JoinColumn(name = "GRPR_GRPR")
+    @JoinColumn(name = "GRPR_PROD")
     @ManyToOne
     private ProductoEntity pruducto;
-    @JoinColumn(name = "GRPR_GRPR")
+    @JoinColumn(name = "GRPR_GRUP")
     @ManyToOne
     private GrupoAlimenticioEntity grpoAlimenticio;
 

@@ -5,8 +5,24 @@
  */
 package co.com.lunch.enpoint;
 
+import co.com.lunch.logic.admin.CajaPredeterminadaLogic;
+import co.com.lunch.logic.admin.CategoriaLogic;
+import co.com.lunch.logic.admin.CombinacionesLogic;
+import co.com.lunch.logic.admin.GrupoAlimenticioLogic;
+import co.com.lunch.logic.admin.GrupoAlimenticioProductoLogic;
 import co.com.lunch.logic.admin.InformacionNutricionalLogic;
+import co.com.lunch.logic.admin.ItemLogic;
+import co.com.lunch.logic.admin.MarcaLogic;
+import co.com.lunch.logic.admin.ProductoLogic;
+import co.com.lunch.persistencia.admin.CajaPredeterminadaEntity;
+import co.com.lunch.persistencia.admin.CategoriaEntity;
+import co.com.lunch.persistencia.admin.CombinacionesEntity;
+import co.com.lunch.persistencia.admin.GrupoAlimenticioEntity;
+import co.com.lunch.persistencia.admin.GrupoAlimenticioProductoEntity;
 import co.com.lunch.persistencia.admin.InformacionNutricionalEntity;
+import co.com.lunch.persistencia.admin.ItemEntity;
+import co.com.lunch.persistencia.admin.MarcaEntity;
+import co.com.lunch.persistencia.admin.ProductoEntity;
 import java.util.ArrayList;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
@@ -25,7 +41,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "ingresaInformacionNutricionalEntity")
     public InformacionNutricionalEntity ingresaInformacionNutricionalEntity(@WebParam(name = "info")InformacionNutricionalEntity info){
         InformacionNutricionalEntity infoRetorna=null;
         try{
@@ -41,7 +57,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "actualizaInformacionNutricionalEntity")
     public InformacionNutricionalEntity actualizaInformacionNutricionalEntity(@WebParam(name = "info")InformacionNutricionalEntity info){
         InformacionNutricionalEntity infoRetorna=null;
         try{
@@ -56,7 +72,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "listaInformacionNutricionalEntity")
     public ArrayList<InformacionNutricionalEntity> listaInformacionNutricionalEntity(){
         ArrayList<InformacionNutricionalEntity> infoRetorna=null;
         try{
@@ -73,7 +89,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "ingresaCajaPredeterminadaEntity")
     public CajaPredeterminadaEntity ingresaCajaPredeterminadaEntity(@WebParam(name = "info")CajaPredeterminadaEntity info){
         CajaPredeterminadaEntity infoRetorna=null;
         try{
@@ -89,6 +105,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
+    @WebMethod(operationName = "actualizaCajaPredeterminadaEntity")
     public CajaPredeterminadaEntity actualizaCajaPredeterminadaEntity(@WebParam(name = "info")CajaPredeterminadaEntity info){
         CajaPredeterminadaEntity infoRetorna=null;
         try{
@@ -103,6 +120,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
+    @WebMethod(operationName = "listaCajaPredeterminadaEntity")
     public ArrayList<CajaPredeterminadaEntity> listaCajaPredeterminadaEntity(){
         ArrayList<CajaPredeterminadaEntity> infoRetorna=null;
         try{
@@ -119,7 +137,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "ingresaCategoriaEntity")
     public CategoriaEntity ingresaCategoriaEntity(@WebParam(name = "info")CategoriaEntity info){
         CategoriaEntity infoRetorna=null;
         try{
@@ -135,6 +153,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
+    @WebMethod(operationName = "actualizaCategoriaEntity")
     public CategoriaEntity actualizaCategoriaEntity(@WebParam(name = "info")CategoriaEntity info){
         CategoriaEntity infoRetorna=null;
         try{
@@ -149,6 +168,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
+    @WebMethod(operationName = "listaCategoriaEntity")
     public ArrayList<CategoriaEntity> listaCategoriaEntity(){
         ArrayList<CategoriaEntity> infoRetorna=null;
         try{
@@ -164,7 +184,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "ingresaCombinacionesEntity")
     public CombinacionesEntity ingresaCombinacionesEntity(@WebParam(name = "info")CombinacionesEntity info){
         CombinacionesEntity infoRetorna=null;
         try{
@@ -180,6 +200,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
+    @WebMethod(operationName = "actualizaCombinacionesEntity")
     public CombinacionesEntity actualizaCombinacionesEntity(@WebParam(name = "info")CombinacionesEntity info){
         CombinacionesEntity infoRetorna=null;
         try{
@@ -194,6 +215,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
+    @WebMethod(operationName = "listaCombinacionesEntity")
     public ArrayList<CombinacionesEntity> listaCombinacionesEntity(){
         ArrayList<CombinacionesEntity> infoRetorna=null;
         try{
@@ -210,7 +232,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "ingresaGrupoAlimenticioEntity")
     public GrupoAlimenticioEntity ingresaGrupoAlimenticioEntity(@WebParam(name = "info")GrupoAlimenticioEntity info){
         GrupoAlimenticioEntity infoRetorna=null;
         try{
@@ -226,6 +248,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
+    @WebMethod(operationName = "actualizaGrupoAlimenticioEntity")
     public GrupoAlimenticioEntity actualizaGrupoAlimenticioEntity(@WebParam(name = "info")GrupoAlimenticioEntity info){
         GrupoAlimenticioEntity infoRetorna=null;
         try{
@@ -240,6 +263,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
+    @WebMethod(operationName = "listaGrupoAlimenticioEntity")
     public ArrayList<GrupoAlimenticioEntity> listaGrupoAlimenticioEntity(){
         ArrayList<GrupoAlimenticioEntity> infoRetorna=null;
         try{
@@ -255,7 +279,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "ingresaGrupoAlimenticioProductoEntity")
     public GrupoAlimenticioProductoEntity ingresaGrupoAlimenticioProductoEntity(@WebParam(name = "info")GrupoAlimenticioProductoEntity info){
         GrupoAlimenticioProductoEntity infoRetorna=null;
         try{
@@ -271,6 +295,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
+    @WebMethod(operationName = "actualizaGrupoAlimenticioProductoEntity")
     public GrupoAlimenticioProductoEntity actualizaGrupoAlimenticioProductoEntity(@WebParam(name = "info")GrupoAlimenticioProductoEntity info){
         GrupoAlimenticioProductoEntity infoRetorna=null;
         try{
@@ -285,6 +310,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
+    @WebMethod(operationName = "listaGrupoAlimenticioProductoEntity")
     public ArrayList<GrupoAlimenticioProductoEntity> listaGrupoAlimenticioProductoEntity(){
         ArrayList<GrupoAlimenticioProductoEntity> infoRetorna=null;
         try{
@@ -297,57 +323,11 @@ public class adminEndpoint {
     }
 	
 	/**
-     * Método que permite insertar un registro de la InformacionNutricional
-     * @param info
-     * @return 
-     */
-    @WebMethod
-    public InformacionNutricionalEntity ingresaInformacionNutricionalEntity(@WebParam(name = "info")InformacionNutricionalEntity info){
-        InformacionNutricionalEntity infoRetorna=null;
-        try{
-            InformacionNutricionalLogic logic=new InformacionNutricionalLogic();
-            infoRetorna=logic.ingresaInformacionNutricional(info);
-        }catch(Exception e){
-            System.out.println("ERROR en la inserción del webservice");
-        }
-        return infoRetorna;
-    }
-    /**
-     * Método que permite actualizar un registro de la InformacionNutricional
-     * @param info
-     * @return 
-     */
-    public InformacionNutricionalEntity actualizaInformacionNutricionalEntity(@WebParam(name = "info")InformacionNutricionalEntity info){
-        InformacionNutricionalEntity infoRetorna=null;
-        try{
-            InformacionNutricionalLogic logic=new InformacionNutricionalLogic();
-            infoRetorna=logic.actualizaInformacionNutricional(info);
-        }catch(Exception e){
-            System.out.println("ERROR en la actualización del webservice");
-        }
-        return infoRetorna;
-    }
-    /**
-     * Método que trae toda la lista de las informaciones nutricionales
-     * @return 
-     */
-    public ArrayList<InformacionNutricionalEntity> listaInformacionNutricionalEntity(){
-        ArrayList<InformacionNutricionalEntity> infoRetorna=null;
-        try{
-            InformacionNutricionalLogic logic=new InformacionNutricionalLogic();
-            infoRetorna=logic.listaInformacionNutricional();
-        }catch(Exception e){
-            System.out.println("ERROR en la actualización del webservice");
-        }
-        return infoRetorna;
-    }
-	
-	/**
      * Método que permite insertar un registro de la Item
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "ingresaItemEntity")
     public ItemEntity ingresaItemEntity(@WebParam(name = "info")ItemEntity info){
         ItemEntity infoRetorna=null;
         try{
@@ -363,6 +343,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
+    @WebMethod(operationName = "actualizaItemEntity")
     public ItemEntity actualizaItemEntity(@WebParam(name = "info")ItemEntity info){
         ItemEntity infoRetorna=null;
         try{
@@ -377,6 +358,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
+    @WebMethod(operationName = "listaItemEntity")
     public ArrayList<ItemEntity> listaItemEntity(){
         ArrayList<ItemEntity> infoRetorna=null;
         try{
@@ -393,7 +375,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "ingresaMarcaEntity")
     public MarcaEntity ingresaMarcaEntity(@WebParam(name = "info")MarcaEntity info){
         MarcaEntity infoRetorna=null;
         try{
@@ -409,6 +391,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
+    @WebMethod(operationName = "actualizaMarcaEntity")
     public MarcaEntity actualizaMarcaEntity(@WebParam(name = "info")MarcaEntity info){
         MarcaEntity infoRetorna=null;
         try{
@@ -423,6 +406,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
+    @WebMethod(operationName = "listaMarcaEntity")
     public ArrayList<MarcaEntity> listaMarcaEntity(){
         ArrayList<MarcaEntity> infoRetorna=null;
         try{
@@ -439,7 +423,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
-    @WebMethod
+    @WebMethod(operationName = "ingresaProductoEntity")
     public ProductoEntity ingresaProductoEntity(@WebParam(name = "info")ProductoEntity info){
         ProductoEntity infoRetorna=null;
         try{
@@ -455,6 +439,7 @@ public class adminEndpoint {
      * @param info
      * @return 
      */
+    @WebMethod(operationName = "actualizaProductoEntity")
     public ProductoEntity actualizaProductoEntity(@WebParam(name = "info")ProductoEntity info){
         ProductoEntity infoRetorna=null;
         try{
@@ -469,6 +454,7 @@ public class adminEndpoint {
      * Método que trae toda la lista de las informaciones nutricionales
      * @return 
      */
+    @WebMethod(operationName = "listaProductoEntity")
     public ArrayList<ProductoEntity> listaProductoEntity(){
         ArrayList<ProductoEntity> infoRetorna=null;
         try{
@@ -478,5 +464,9 @@ public class adminEndpoint {
             System.out.println("ERROR en la actualización del webservice");
         }
         return infoRetorna;
+    }
+    @WebMethod(operationName = "test")
+    public int test(){
+        return 58;
     }
 }

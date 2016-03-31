@@ -5,11 +5,11 @@
  */
 package co.com.lunch.conexion;
 
-import javax.imageio.spi.ServiceRegistry;
-import org.hibernate.cfg.AnnotationConfiguration;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
 
 /**
  * Hibernate Utility class with a convenient method to get Session Factory
@@ -27,7 +27,7 @@ public class HibernateUtil {
                 Configuration configuration = new Configuration().configure(HibernateUtil.class.getResource("hibernatePostgreSQL.cfg.xml"));
                 StandardServiceRegistryBuilder serviceRegistryBuilder = new StandardServiceRegistryBuilder();
                 serviceRegistryBuilder.applySettings(configuration.getProperties());
-                ServiceRegistry serviceRegistry = (ServiceRegistry) serviceRegistryBuilder.build();
+                ServiceRegistry serviceRegistry =serviceRegistryBuilder.build();
                 sessionFactory = configuration.buildSessionFactory((org.hibernate.service.ServiceRegistry) serviceRegistry);
             }
         } catch (Throwable ex) {

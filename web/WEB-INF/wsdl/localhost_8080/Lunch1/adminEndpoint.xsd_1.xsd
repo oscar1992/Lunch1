@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://enpoint.lunch.com.co/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://enpoint.lunch.com.co/">
+
+<xs:element name="actualizaCajaPredeterminadaEntity" type="tns:actualizaCajaPredeterminadaEntity"/>
+
+<xs:element name="actualizaCajaPredeterminadaEntityResponse" type="tns:actualizaCajaPredeterminadaEntityResponse"/>
+
+<xs:element name="actualizaCategoriaEntity" type="tns:actualizaCategoriaEntity"/>
+
+<xs:element name="actualizaCategoriaEntityResponse" type="tns:actualizaCategoriaEntityResponse"/>
+
+<xs:element name="actualizaCombinacionesEntity" type="tns:actualizaCombinacionesEntity"/>
+
+<xs:element name="actualizaCombinacionesEntityResponse" type="tns:actualizaCombinacionesEntityResponse"/>
+
+<xs:element name="actualizaGrupoAlimenticioEntity" type="tns:actualizaGrupoAlimenticioEntity"/>
+
+<xs:element name="actualizaGrupoAlimenticioEntityResponse" type="tns:actualizaGrupoAlimenticioEntityResponse"/>
+
+<xs:element name="actualizaGrupoAlimenticioProductoEntity" type="tns:actualizaGrupoAlimenticioProductoEntity"/>
+
+<xs:element name="actualizaGrupoAlimenticioProductoEntityResponse" type="tns:actualizaGrupoAlimenticioProductoEntityResponse"/>
+
+<xs:element name="actualizaInformacionNutricionalEntity" type="tns:actualizaInformacionNutricionalEntity"/>
+
+<xs:element name="actualizaInformacionNutricionalEntityResponse" type="tns:actualizaInformacionNutricionalEntityResponse"/>
+
+<xs:element name="actualizaItemEntity" type="tns:actualizaItemEntity"/>
+
+<xs:element name="actualizaItemEntityResponse" type="tns:actualizaItemEntityResponse"/>
+
+<xs:element name="actualizaMarcaEntity" type="tns:actualizaMarcaEntity"/>
+
+<xs:element name="actualizaMarcaEntityResponse" type="tns:actualizaMarcaEntityResponse"/>
+
+<xs:element name="actualizaProductoEntity" type="tns:actualizaProductoEntity"/>
+
+<xs:element name="actualizaProductoEntityResponse" type="tns:actualizaProductoEntityResponse"/>
+
+<xs:element name="ingresaCajaPredeterminadaEntity" type="tns:ingresaCajaPredeterminadaEntity"/>
+
+<xs:element name="ingresaCajaPredeterminadaEntityResponse" type="tns:ingresaCajaPredeterminadaEntityResponse"/>
+
+<xs:element name="ingresaCategoriaEntity" type="tns:ingresaCategoriaEntity"/>
+
+<xs:element name="ingresaCategoriaEntityResponse" type="tns:ingresaCategoriaEntityResponse"/>
+
+<xs:element name="ingresaCombinacionesEntity" type="tns:ingresaCombinacionesEntity"/>
+
+<xs:element name="ingresaCombinacionesEntityResponse" type="tns:ingresaCombinacionesEntityResponse"/>
+
+<xs:element name="ingresaGrupoAlimenticioEntity" type="tns:ingresaGrupoAlimenticioEntity"/>
+
+<xs:element name="ingresaGrupoAlimenticioEntityResponse" type="tns:ingresaGrupoAlimenticioEntityResponse"/>
+
+<xs:element name="ingresaGrupoAlimenticioProductoEntity" type="tns:ingresaGrupoAlimenticioProductoEntity"/>
+
+<xs:element name="ingresaGrupoAlimenticioProductoEntityResponse" type="tns:ingresaGrupoAlimenticioProductoEntityResponse"/>
+
+<xs:element name="ingresaInformacionNutricionalEntity" type="tns:ingresaInformacionNutricionalEntity"/>
+
+<xs:element name="ingresaInformacionNutricionalEntityResponse" type="tns:ingresaInformacionNutricionalEntityResponse"/>
+
+<xs:element name="ingresaItemEntity" type="tns:ingresaItemEntity"/>
+
+<xs:element name="ingresaItemEntityResponse" type="tns:ingresaItemEntityResponse"/>
+
+<xs:element name="ingresaMarcaEntity" type="tns:ingresaMarcaEntity"/>
+
+<xs:element name="ingresaMarcaEntityResponse" type="tns:ingresaMarcaEntityResponse"/>
+
+<xs:element name="ingresaProductoEntity" type="tns:ingresaProductoEntity"/>
+
+<xs:element name="ingresaProductoEntityResponse" type="tns:ingresaProductoEntityResponse"/>
+
+<xs:element name="listaCajaPredeterminadaEntity" type="tns:listaCajaPredeterminadaEntity"/>
+
+<xs:element name="listaCajaPredeterminadaEntityResponse" type="tns:listaCajaPredeterminadaEntityResponse"/>
+
+<xs:element name="listaCategoriaEntity" type="tns:listaCategoriaEntity"/>
+
+<xs:element name="listaCategoriaEntityResponse" type="tns:listaCategoriaEntityResponse"/>
+
+<xs:element name="listaCombinacionesEntity" type="tns:listaCombinacionesEntity"/>
+
+<xs:element name="listaCombinacionesEntityResponse" type="tns:listaCombinacionesEntityResponse"/>
+
+<xs:element name="listaGrupoAlimenticioEntity" type="tns:listaGrupoAlimenticioEntity"/>
+
+<xs:element name="listaGrupoAlimenticioEntityResponse" type="tns:listaGrupoAlimenticioEntityResponse"/>
+
+<xs:element name="listaGrupoAlimenticioProductoEntity" type="tns:listaGrupoAlimenticioProductoEntity"/>
+
+<xs:element name="listaGrupoAlimenticioProductoEntityResponse" type="tns:listaGrupoAlimenticioProductoEntityResponse"/>
+
+<xs:element name="listaInformacionNutricionalEntity" type="tns:listaInformacionNutricionalEntity"/>
+
+<xs:element name="listaInformacionNutricionalEntityResponse" type="tns:listaInformacionNutricionalEntityResponse"/>
+
+<xs:element name="listaItemEntity" type="tns:listaItemEntity"/>
+
+<xs:element name="listaItemEntityResponse" type="tns:listaItemEntityResponse"/>
+
+<xs:element name="listaMarcaEntity" type="tns:listaMarcaEntity"/>
+
+<xs:element name="listaMarcaEntityResponse" type="tns:listaMarcaEntityResponse"/>
+
+<xs:element name="listaProductoEntity" type="tns:listaProductoEntity"/>
+
+<xs:element name="listaProductoEntityResponse" type="tns:listaProductoEntityResponse"/>
+
+<xs:element name="test" type="tns:test"/>
+
+<xs:element name="testResponse" type="tns:testResponse"/>
+
+<xs:complexType name="actualizaGrupoAlimenticioEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:grupoAlimenticioEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grupoAlimenticioEntity">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="rango" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaGrupoAlimenticioEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:grupoAlimenticioEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaItemEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:itemEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="itemEntity">
+<xs:sequence>
+<xs:element name="combinacion" type="tns:combinacionesEntity" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="producto" type="tns:productoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="combinacionesEntity">
+<xs:sequence>
+<xs:element name="caja" type="tns:cajaPredeterminadaEntity" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="orden" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cajaPredeterminadaEntity">
+<xs:sequence>
+<xs:element name="color" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="productoEntity">
+<xs:sequence>
+<xs:element name="categoria" type="tns:categoriaEntity" minOccurs="0"/>
+<xs:element name="grupo" type="tns:grupoAlimenticioEntity" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="imagen" type="xs:base64Binary" minOccurs="0"/>
+<xs:element name="marca" type="tns:marcaEntity" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="precio" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="categoriaEntity">
+<xs:sequence>
+<xs:element name="categoria" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="marcaEntity">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="marca" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaItemEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:itemEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaItemEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:itemEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaItemEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:itemEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaCombinacionesEntity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaCombinacionesEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:combinacionesEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaProductoEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:productoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaProductoEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:productoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaInformacionNutricionalEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:informacionNutricionalEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="informacionNutricionalEntity">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="item" type="tns:productoEntity" minOccurs="0"/>
+<xs:element name="tipo" type="xs:string" minOccurs="0"/>
+<xs:element name="valor" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaInformacionNutricionalEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:informacionNutricionalEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaInformacionNutricionalEntity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaInformacionNutricionalEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:informacionNutricionalEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaCajaPredeterminadaEntity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaCajaPredeterminadaEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cajaPredeterminadaEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaCategoriaEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:categoriaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaCategoriaEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:categoriaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaGrupoAlimenticioEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:grupoAlimenticioEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaGrupoAlimenticioEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:grupoAlimenticioEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaCajaPredeterminadaEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:cajaPredeterminadaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaCajaPredeterminadaEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cajaPredeterminadaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaCombinacionesEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:combinacionesEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaCombinacionesEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:combinacionesEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaMarcaEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:marcaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaMarcaEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:marcaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaProductoEntity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaProductoEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:productoEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="test">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="testResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaGrupoAlimenticioProductoEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:grupoAlimenticioProductoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="grupoAlimenticioProductoEntity">
+<xs:sequence>
+<xs:element name="grpoAlimenticio" type="tns:grupoAlimenticioEntity" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="pruducto" type="tns:productoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaGrupoAlimenticioProductoEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:grupoAlimenticioProductoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaProductoEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:productoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaProductoEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:productoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaItemEntity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaItemEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:itemEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaCombinacionesEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:combinacionesEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaCombinacionesEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:combinacionesEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaGrupoAlimenticioProductoEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:grupoAlimenticioProductoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaGrupoAlimenticioProductoEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:grupoAlimenticioProductoEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaGrupoAlimenticioProductoEntity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaGrupoAlimenticioProductoEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:grupoAlimenticioProductoEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaCajaPredeterminadaEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:cajaPredeterminadaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ingresaCajaPredeterminadaEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cajaPredeterminadaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaGrupoAlimenticioEntity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaGrupoAlimenticioEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:grupoAlimenticioEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaInformacionNutricionalEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:informacionNutricionalEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaInformacionNutricionalEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:informacionNutricionalEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaMarcaEntity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaMarcaEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:marcaEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaCategoriaEntity">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaCategoriaEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:categoriaEntity" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaMarcaEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:marcaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaMarcaEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:marcaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaCategoriaEntity">
+<xs:sequence>
+<xs:element name="info" type="tns:categoriaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizaCategoriaEntityResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:categoriaEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
